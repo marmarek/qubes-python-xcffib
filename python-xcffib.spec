@@ -3,13 +3,13 @@
 %endif
 
 Name: python-xcffib
-Version: 0.4.2
+Version: 0.5.1
 Release: 1%{?dist}
 Url: https://github.com/tych0/xcffib
 Summary: A drop in replacement for xpyb, an XCB python binding
 License: Apache License 2.0
 Group: Development/Languages/Python
-Source: https://pypi.python.org/packages/b4/f2/3c5d733ed2db2fc46531ed0d59e4001f5fae7ed0d708316a808569bab7d3/xcffib-0.4.2.tar.gz
+Source: https://pypi.python.org/packages/48/e8/83dc668044f0393c5b7bea1afdf42bf25005ca067bb130db924f673261ad/xcffib-0.5.1.tar.gz
 
 BuildArch: noarch
 BuildRequires: python2-devel
@@ -82,8 +82,8 @@ CFLAGS="$RPM_OPT_FLAGS" %{__python2} setup.py build
 CFLAGS="$RPM_OPT_FLAGS" %{__python3} setup.py build
 
 %install
-%{__python2} setup.py install --skip-build --root %{buildroot}
-%{__python3} setup.py install --skip-build --root %{buildroot}
+%{__python2} setup.py install --root %{buildroot}
+%{__python3} setup.py install --root %{buildroot}
 
 %files
 %doc LICENSE
