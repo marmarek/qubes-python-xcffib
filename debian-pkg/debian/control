@@ -4,23 +4,6 @@ Priority: optional
 Maintainer: Iain R. Learmonth <irl@debian.org>
 Build-Depends: debhelper (>= 9)
   , dh-python
-  , pkg-config
-  , ghc
-  , xcb-proto
-  , libxcb-render0-dev
-  , libxcb1-dev
-  , cabal-install
-  , libghc-xcb-types-dev (>= 0.7.0)
-  , libghc-language-python-dev (>= 0.5.2)
-  , libghc-language-python-dev
-  , libghc-split-dev
-  , libghc-optparse-applicative-dev (>= 0.5)
-  , libghc-filemanip-dev
-  , libghc-mtl-dev (>= 2.1)
-  , libghc-test-framework-hunit-dev
-  , libghc-attoparsec-dev
-  , libghc-semigroups-dev
-  , libghc-either-dev
   , python-setuptools
   , python3-setuptools
   , python-autopep8
