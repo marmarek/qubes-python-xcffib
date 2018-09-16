@@ -9,8 +9,8 @@ Build-Depends: debhelper (>= 9)
   , python-autopep8
   , python-all
   , python3-all
-  , python-cffi
-  , python3-cffi
+  , python-cffi (>= 1.1.0)
+  , python3-cffi (>= 1.1.0)
 # testing
   , python-nose
   , python3-nose
