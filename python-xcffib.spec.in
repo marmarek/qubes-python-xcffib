@@ -1,11 +1,11 @@
 Name: python-xcffib
-Version: 0.5.1
+Version: @VERSION@
 Release: 1%{?dist}
 Url: https://github.com/tych0/xcffib
 Summary: A drop in replacement for xpyb, an XCB python binding
 License: Apache License 2.0
 Group: Development/Languages/Python
-Source: https://pypi.python.org/packages/48/e8/83dc668044f0393c5b7bea1afdf42bf25005ca067bb130db924f673261ad/xcffib-0.5.1.tar.gz
+Source: https://files.pythonhosted.org/packages/source/p/xcffib/xcffib-%{version}.tar.gz
 
 BuildArch: noarch
 BuildRequires: python2-devel
