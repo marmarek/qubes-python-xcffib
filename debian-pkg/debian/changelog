@@ -1,3 +1,20 @@
+xcffib (0.5.1-2) unstable; urgency=medium
+
+  [ Frédéric Pierret ]
+  * Restrict build to VM packages set and DIST=centos7
+  * Use %{python3_pkgversion} instead of duplicating python3 targets
+  * Makefile.builder: add NO_ARCHIVE := 1
+
+  [ Marek Marczykowski-Górecki ]
+  * debian: add packaging
+  * rpm: make spec file version independent
+  * travis: initial version
+  * debian: drop build dependencies required to generate python code
+  * travis: add buster build
+  * debian: add version requirement for python-cffi
+
+ -- Marek Marczykowski-Górecki <marmarek@invisiblethingslab.com>  Mon, 17 Sep 2018 05:48:39 +0200
+
 xcffib (0.5.1-1) unstable; urgency=medium
 
   * New upstream version (Closes: #839760, #839314, #866543)

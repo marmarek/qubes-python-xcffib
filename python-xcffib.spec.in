@@ -1,6 +1,6 @@
 Name: python-xcffib
 Version: @VERSION@
-Release: 1%{?dist}
+Release: 2%{?dist}
 Url: https://github.com/tych0/xcffib
 Summary: A drop in replacement for xpyb, an XCB python binding
 License: Apache License 2.0
