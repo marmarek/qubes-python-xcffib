@@ -10,6 +10,7 @@ NO_ARCHIVE := 1
 DEBIAN_BUILD_DIRS := debian-pkg/debian
 
 SOURCE_COPY_IN.debian := source-debian-copy-in
+SOURCE_COPY_IN.qubuntu := source-debian-copy-in
 SOURCE_COPY_IN := $(SOURCE_COPY_IN.$(DISTRIBUTION))
 
 source-debian-copy-in: VERSION = $(shell cat $(ORIG_SRC)/version)
