@@ -1,3 +1,14 @@
+xcffib (0.5.1-3) unstable; urgency=medium
+
+  [ unman ]
+  * Configure build for Ubuntu templates
+  * Disable tests at build time, as per nocheck option
+
+  [ Marek Marczykowski-Górecki ]
+  * Use 'rel' file
+
+ -- Marek Marczykowski-Górecki <marmarek@invisiblethingslab.com>  Sat, 23 Mar 2019 04:26:45 +0100
+
 xcffib (0.5.1-2) unstable; urgency=medium
 
   [ Frédéric Pierret ]
