@@ -7,7 +7,9 @@ endif
 
 NO_ARCHIVE := 1
 
-DEBIAN_BUILD_DIRS := debian-pkg/debian
+DEBIAN_BUILD_DIRS.buster := debian-pkg/debian
+DEBIAN_BUILD_DIRS.stretch := debian-pkg/debian
+DEBIAN_BUILD_DIRS := $(DEBIAN_BUILD_DIRS.$(DIST))
 
 SOURCE_COPY_IN.debian := source-debian-copy-in
 SOURCE_COPY_IN.qubuntu := source-debian-copy-in
