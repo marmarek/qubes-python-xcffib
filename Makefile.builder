@@ -1,10 +1,3 @@
-ifeq ($(PACKAGE_SET),vm)
-	ifeq ($(DISTRIBUTION),centos)
-		RPM_SPEC_FILES := \
-			python-xcffib.spec
-	endif
-endif
-
 NO_ARCHIVE := 1
 
 DEBIAN_BUILD_DIRS := debian-pkg/debian
