@@ -2,8 +2,11 @@ VERSION := $(shell cat version)
 URL := https://files.pythonhosted.org/packages/source/x/xcffib/xcffib-$(VERSION).tar.gz
 SRC_FILE = $(notdir $(URL))
 UNTRUSTED_SUFF := .UNTRUSTED
-FETCH_CMD := wget --no-use-server-timestamps -q -O
 SHELL := /bin/bash
+
+ifeq ($(FETCH_CMD),)
+$(error "You can not run this Makefile without having FETCH_CMD defined")
+endif
 
 %: %.sha256
 	@$(FETCH_CMD) $@$(UNTRUSTED_SUFF) $(URL)
